@@ -1,7 +1,4 @@
-// import { useEffect, useState } from "react";
-// import axios from "axios";
 import { useGoogleLogin, googleLogout } from "@react-oauth/google";
-// import logo from "../public/ncs3.png"
 
 function App() {
 
@@ -17,41 +14,6 @@ function App() {
     localStorage.clear();
   };
 
-  // useEffect(() => {
-  //   if (makePost) {
-  //     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
-  //     console.log("user info", userInfo);
-  //     axios
-  //       .get(
-  //         `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${userInfo.access_token}`,
-  //         {
-  //           headers: {
-  //             Authorization: `Bearer ${userInfo.access_token}`,
-  //             Accept: "application/json",
-  //           },
-  //         }
-  //       )
-  //       .then((response) => {
-  //         console.log("axios response", response);
-  //         localStorage.setItem("userEmail", JSON.stringify(response.data));
-  //         setUserEmail(response.data);
-  //         fetchUserData(response.data.email);
-  //         setGoToDashboard(true);
-  //         setMakePost(false);
-  //         navigate("/bcsf/dashboard");
-  //       })
-  //       .catch((error) => console.log(error));
-  //   }
-  // }, [navigate, userInfo, makePost]);
-
-  // useEffect(() => {
-  //   const userEmailInStorage = JSON.parse(localStorage.getItem("userEmail"));
-  //   if (userEmailInStorage) {
-  //     // If userEmail is present, navigate to dashboard
-  //     navigate("/bcsf/dashboard");
-  //   }
-  // }, [navigate]);
-
   const logoStyle = {
     width: "100px",
     height: "auto",
@@ -62,7 +24,7 @@ function App() {
       <div className="bg-white shadow-xl h-[30rem] w-[500px] rounded-lg p-6">
         <div className="flex-grow w-full flex items-center justify-center">
           <img
-            src="public\ncs3.png"
+            src="https://drive.google.com/uc?export=view&id=1mTNY69n7c3p1Lo2iNUTH4U52xuGqvL5C"
             alt="BCSF"
             style={logoStyle}
           />
